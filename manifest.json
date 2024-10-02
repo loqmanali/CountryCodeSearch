@@ -1,9 +1,11 @@
 {
     "name": "Country Code Search",
     "short_name": "Country Code Search",
-    "start_url": "/",
+    "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",
+    "description": "Country Code Search",
+    "orientation": "portrait-primary",
     "theme_color": "#000000",
     "icons": [
         {
