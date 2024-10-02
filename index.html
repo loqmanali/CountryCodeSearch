@@ -14,7 +14,7 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="https://loqmanali.github.io/CountryCodeSearch/">
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -31,8 +31,19 @@
 
   <title>country_code_search</title>
   <link rel="manifest" href="manifest.json">
+  
+  <!-- Add these lines for PWA support -->
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3004398760');
+      });
+    }
+  </script>
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+  <script src="main.dart.js" defer></script>
 </body>
 </html>
